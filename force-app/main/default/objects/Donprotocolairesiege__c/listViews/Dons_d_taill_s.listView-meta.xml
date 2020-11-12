@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dons_d_taill_s</fullName>
+    <columns>NAME</columns>
+    <columns>DL_DT__c</columns>
+    <columns>Montant_du_Don_HT__c</columns>
+    <columns>Numwebdr__c</columns>
+    <columns>Organisateur__c</columns>
+    <columns>Statut__c</columns>
+    <columns>Ville__c</columns>
+    <columns>Type_Don__c</columns>
+    <columns>Pourcentage_proposition__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Dons détaillés</label>
+</ListView>

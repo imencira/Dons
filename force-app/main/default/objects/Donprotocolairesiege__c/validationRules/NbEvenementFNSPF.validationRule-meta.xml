@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NbEvenementFNSPF</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND( ISPICKVAL( Type_Don__c ,&quot;Protocolaire&quot;),  ISPICKVAL( F_d_ration_concern_e__c,&quot;FNSPF&quot;),     NOT(ISNULL(v_nement_2_Date_concern_e__c))   ),
+
+AND( ISPICKVAL( Type_Don__c ,&quot;Protocolaire&quot;),  ISPICKVAL( F_d_ration_concern_e__c,&quot;FNSPF&quot;),     NOT(ISNULL( Montant_des_droits_d_auteur_HT2__c ))   ))</errorConditionFormula>
+    <errorMessage>Pour FNSPF, il faut saisir 1 seul événement  ayant généré le plus de droits</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>DL_DT__c</columns>
+    <columns>Cl_tur__c</columns>
+    <columns>Type_Don__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Nom_utilisateur__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Tout</label>
+    <sharedTo>
+        <role>Charg_Client_le</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Montant_Perception_HT__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(   ISPICKVAL(Don__r.Type_Don__c, &apos;Protocolaire&apos;)   , Don__r.Montant_global_des_droits_d_auteur_HT__c  , Don__r.Montant_des_droits__c * Part_du_Don__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Montant Perception HT</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

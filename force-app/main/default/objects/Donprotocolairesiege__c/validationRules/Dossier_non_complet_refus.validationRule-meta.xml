@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dossier_non_complet_refus</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( AND( NOT(ISPICKVAL( Profile_Cr_ation__c , &apos;Direction réseau&apos;)), NOT(ISPICKVAL(Profile_Cr_ation__c ,&apos;Pilotage réseau&apos; ) )) 
+,OR (
+
+AND (   ISPICKVAL(D_cisiondirection__c, &apos;Refus&apos;) , NOT (ISPICKVAL( Validation_Charg_Client_le__c ,&apos;Dossier Complet&apos;) )),
+
+AND (   ISPICKVAL(D_cisiondirection__c, &apos;Accord&apos;) , NOT (ISPICKVAL( Validation_Charg_Client_le__c ,&apos;Dossier Complet&apos;) ))
+
+
+)
+)</errorConditionFormula>
+    <errorMessage>Le dossier doit être finaliser par le chargé clientèle avant de valider le Don</errorMessage>
+</ValidationRule>

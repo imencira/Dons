@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Approval_Flag</fullName>
+        <field>Approval_Flag_Direction_Protocolaire__c</field>
+        <literalValue>0</literalValue>
+        <name>Approval Flag</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved</fullName>
+        <field>Statut_Validation_Direction_R_seau_ND__c</field>
+        <literalValue>Approuvé</literalValue>
+        <name>Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_flag_directio_SIEGE</fullName>
+        <field>Approval_Flag_Direction_Siege__c</field>
+        <literalValue>1</literalValue>
+        <name>Approved flag direction SIEGE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_flag_direction</fullName>
+        <field>Approval_Flag_Direction_Protocolaire__c</field>
+        <literalValue>1</literalValue>
+        <name>Approved flag direction</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_flag_direction_SIEGE</fullName>
+        <field>Approval_Flag_Direction_Siege__c</field>
+        <literalValue>0</literalValue>
+        <name>Approved flag direction SIEGE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_nd</fullName>
+        <field>Statut_Approbation_Directeur_R_seau_ND__c</field>
+        <literalValue>Approuvée</literalValue>
+        <name>Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>En_Attente</fullName>
+        <field>Statut_Validation_Direction_R_seau_ND__c</field>
+        <literalValue>En attente</literalValue>
+        <name>En Attente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ND_Approuv_e</fullName>
+        <field>Statut_Validation_Direction_R_seau_ND__c</field>
+        <literalValue>Approuvé</literalValue>
+        <name>ND Approuvée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ND_Valid_e</fullName>
+        <field>Date_envoi_ND__c</field>
+        <formula>LastModifiedDate</formula>
+        <name>ND Validée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ND_non_Approuv</fullName>
+        <field>Statut_Approbation_Directeur_R_seau_ND__c</field>
+        <literalValue>Non approuvée</literalValue>
+        <name>ND non Approuvée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ND_non_Approuv_e</fullName>
+        <field>Statut_Validation_Direction_R_seau_ND__c</field>
+        <literalValue>nonapprouve</literalValue>
+        <name>ND non Approuvée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Not_Approved</fullName>
+        <field>Statut_Validation_Direction_R_seau_ND__c</field>
+        <literalValue>nonapprouve</literalValue>
+        <name>Not Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Not_Approved_nd</fullName>
+        <field>Statut_Approbation_Directeur_R_seau_ND__c</field>
+        <literalValue>Non approuvée</literalValue>
+        <name>Not Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Not_Approvedd</fullName>
+        <field>Statut_Validation_Direction_R_seau_ND__c</field>
+        <literalValue>nonapprouve</literalValue>
+        <name>Not Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

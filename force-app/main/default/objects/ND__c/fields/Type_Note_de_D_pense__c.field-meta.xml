@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Note_de_D_pense__c</fullName>
+    <externalId>false</externalId>
+    <label>Type Note de Dépense</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Protocolaire</fullName>
+                <default>false</default>
+                <label>Protocolaire</label>
+            </value>
+            <value>
+                <fullName>Appréciation du Siège</fullName>
+                <default>false</default>
+                <label>Appréciation du Siège</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

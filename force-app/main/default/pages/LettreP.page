@@ -1,0 +1,262 @@
+<apex:page standardController="Donprotocolairesiege__c" extensions="benificiairePagination" showQuickActionVfHeader="false" renderAs="pdf" >
+
+<head>
+
+    
+        <style>
+
+            body { font-family: 'Arial Unicode MS'; }
+
+            .companyName { font: bold 30px; color: blue; } 
+
+        </style>
+        <style>
+        td.total_td{
+            border-top: solid 1px ; //make more selective to get rid of important
+
+        }
+    </style>
+    <style type="text/css">
+    .pbSubheader h3 {
+        white-space: pre;
+    }
+</style>
+  <style type="text/css" media="print">
+                       @page {
+                                 @top-center {
+                                       content: element(header);
+                               }
+                               @bottom-left {
+                                     content: element(footer);
+                               }
+                            }
+                                     div.header {
+                                      padding: 10px;
+                                      position: running(header);
+                           }
+                       div.footer {
+                                display: block;
+                             padding: 5px;
+                               position: running(footer);
+                      }
+                                     .pagenumber:before {
+                                        content: counter(page);
+                       }
+                                   .pagecount:before {
+                             content: counter(pages);
+                        }
+                    </style>
+    </head>
+        <apex:form >
+
+<apex:pageBlock rendered="{!Renderedlettre}" >  
+ <div class="header">
+    <img src="{!$Resource.logo_sacem}" width="20%"/>
+  </div>
+  
+  <apex:panelGrid columns="1" width="50%">
+   <apex:outputText value="Société des Auteurs, "></apex:outputText>
+
+ <apex:outputText value="Compositeurs et"></apex:outputText>
+  <apex:outputText value="Éditeurs de Musique"></apex:outputText>
+
+          </apex:panelGrid>
+                
+<br />
+ <apex:outputText value="DIRECTION DU RESEAU"  styleClass="companyName" />
+
+
+    <apex:pageBlockTable value="{!Records}" var="Record"   style="float:right;width:300px;"> 
+ <apex:column >
+       
+        <p> {!Record.Libelle__c} {!NameOrganisateur} </p>
+        <p> {!Record.Civilit__c} {!Record.Pr_nom__c} {!Record.Nom__c} </p>
+        <p> {!Record.Adresse__c}  </p>
+        <p> {!Record.CP__c} {!Record.Ville__c}  </p> 
+        <br/>
+        <p> Neuilly-sur-Seine, {!formattedDateNow } </p> 
+          
+        </apex:column> 
+
+    </apex:pageBlockTable> 
+
+  <apex:outputPanel >
+ 
+    <apex:pageBlockTable value="{!Records}" var="Record" style="text-align: justify;"> 
+     <apex:column > 
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <p>{!Record.Civilit__c}, </p>
+        <p> Nous faisons suite à la demande de don protocolaire que vous avez formulée auprès de notre {!Record.Adapt_name_resp__c}. Nous avons le plaisir de vous annoncer l’octroi d’un don de {!Record.Montant_du_Don_HT__c} €
+        au titre {!Record.Adapt_nb_seance__c} {!formattedDateeven1Protocolaire} .</p>
+        
+        
+        <p> Ce don fait au nom de tous les Auteurs, Compositeurs et Editeurs de notre Société, témoigne de l’intérêt qu’ils portent à votre action et de leur désir de l'accompagner.</p>
+        <p>Je vous prie d'agréer, {!Record.Civilit__c}, l'expression de mes salutations distinguées. </p>
+        
+  </apex:column> 
+
+
+    </apex:pageBlockTable> 
+     
+
+</apex:outputPanel>
+   <br/>  <br/>        
+<br/>  <br/>  
+
+          
+<apex:pageBlockTable value="{!Records}" var="Record"   style=" float:right;width:300px;;line-height:  10px;"> 
+ <apex:column >
+       <p> Stéphane VASSEUR </p> 
+       <p> Directeur du réseau </p>
+          
+        </apex:column> 
+
+    </apex:pageBlockTable> 
+   
+
+<br/>   <br/> <br/> <br/>   <br/>
+
+
+
+    <br/> <br/>   <br/><br/> 
+    
+     <apex:pageBlockTable value="{!Records}" var="Record" columnsWidth="25%,35%,30%,50%" style="font-size:10px;line-height:3px;" > 
+    <apex:column > <p> Societé </p>
+    <p> des Auteurs</p>
+    <p> Compositeurs </p>
+    <p>et Éditeur de Musique </p> 
+    </apex:column> 
+
+ <apex:column > <p> 225 avenue Charle de Gaulle </p>
+    <p> 92528 NEUILLY SUR SEINE CEDEX</p>
+    <p> France </p>
+    </apex:column> 
+
+ <apex:column > <p> Tèl.: 01 47 15 47 15 </p>
+    <p> Fax :01 47 15 47 16</p>
+    <p> www.sacem.fr </p>
+    </apex:column> 
+
+<apex:column > <p> Societé civile</p>
+    <p> capital variable</p>
+    <p> 775 675 739 </p>
+    <p>RCS Nanterre </p> 
+    </apex:column> 
+
+    </apex:pageBlockTable> 
+           
+
+
+ 
+</apex:pageBlock>
+
+
+<apex:pageBlock rendered="{!Renderedlettrerefus}" >  
+ <div class="header">
+    <img src="{!$Resource.logo_sacem}" width="25%"/>
+  </div>
+  
+  <apex:panelGrid columns="1" width="50%">
+   <apex:outputText value="Société des Auteurs, "></apex:outputText>
+
+ <apex:outputText value="Compositeurs et"></apex:outputText>
+  <apex:outputText value="Éditeur de Musique"></apex:outputText>
+
+          </apex:panelGrid>
+                  <br /><br />  <br /><br />
+ <apex:outputText value="DIRECTION DU RESEAU"  styleClass="companyName" />
+
+
+<br /><br />
+     <apex:pageBlockTable value="{!Records}" var="Record"   style="float:right;width:300px;"> 
+ <apex:column >
+       
+        <p> {!NameOrganisateur} </p>
+        <p> {!Record.Civilit__c} {!Record.Pr_nom__c} {!Record.Nom__c} </p>
+        <p> {!Record.Adresse__c}  </p>
+        <p> {!Record.CP__c} {!Record.Ville__c}  </p> 
+        <br/>
+        <p> Neuilly-sur-Seine, {!formattedDateNow } </p> 
+          
+        </apex:column> 
+
+    </apex:pageBlockTable> 
+
+  <apex:outputPanel style="text-align: justify;">
+ 
+    <apex:pageBlockTable value="{!Records}" var="Record" > 
+     <apex:column > 
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <p>{!Record.Civilit__c}, </p>
+        <p> Nous vous informons que la Sacem n’est pas en mesure de réserver une suite favorable à la demande de don que vous avez présentée, celle-ci ne répondant pas aux critères d’attribution définis par les créateurs dans le cadre de leur politique caritative. </p>
+        
+        <p> Nous vous souhaitons néanmoins les meilleurs succès dans vos actions.</p>
+        <p>Veuillez agréer, {!Record.Civilit__c}, nos salutations distinguées. </p>
+        
+  </apex:column> 
+
+
+    </apex:pageBlockTable> 
+     
+
+</apex:outputPanel>
+           
+<br/>  <br/>  <br/>  
+
+    <apex:pageBlockTable value="{!Records}" var="Record"   style=" float:right;width:300px;;line-height:  10px;"> 
+ <apex:column >
+       <p> Stéphane VASSEUR </p> 
+       <p> Directeur du réseau </p>
+          
+        </apex:column> 
+
+    </apex:pageBlockTable> 
+   
+
+<br/>   <br/> <br/> <br/>   <br/>
+
+
+
+    <br/> <br/>  
+    
+     <apex:pageBlockTable value="{!Records}" var="Record" columnsWidth="25%,35%,30%,50%" style="font-size:10px;line-height:3px;" > 
+    <apex:column > <p> Societé </p>
+    <p> des Auteurs</p>
+    <p> Compositeurs </p>
+    <p>et Éditeur de Musique </p> 
+    </apex:column> 
+
+ <apex:column > <p> 225 avenue Charle de Gaulle </p>
+    <p> 92528 NEUILLY SUR SEINE CEDEX</p>
+    <p> France </p>
+    </apex:column> 
+
+ <apex:column > <p> Tèl.: 01 47 15 47 15 </p>
+    <p> Fax :01 47 15 47 16</p>
+    <p> www.sacem.fr </p>
+    </apex:column> 
+
+<apex:column > <p> Societé civile</p>
+    <p> capital variable</p>
+    <p> 775 675 739 </p>
+    <p>RCS Nanterre </p> 
+    </apex:column> 
+
+    </apex:pageBlockTable> 
+           
+
+
+ 
+</apex:pageBlock>
+
+
+
+</apex:form>
+
+
+
+</apex:page>

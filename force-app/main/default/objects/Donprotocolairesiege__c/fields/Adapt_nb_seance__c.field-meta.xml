@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adapt_nb_seance__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  Nombre_de_s_ances__c &gt;1 ,&apos;des séances que vous avez organisées les &apos; ,&apos;de la séance que vous avez organisée le &apos; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Adapt nb seance</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

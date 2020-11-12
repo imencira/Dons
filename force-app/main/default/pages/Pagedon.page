@@ -1,0 +1,6 @@
+<apex:page standardController="Donprotocolairesiege__c" recordSetVar="dons" extensions="donListExt" action="{!init}" >
+    <apex:form >
+
+Aucun enregistrement n'a été sélectionné
+   </apex:form>
+</apex:page>

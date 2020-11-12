@@ -1,0 +1,42 @@
+{
+    "allOrNone" : true,
+    "compositeRequest" : [
+	{
+        "method" : "POST",
+        "url" : "/services/data/v46.0/sobjects/Direction_R_gionale__c",
+        "referenceId" : "dr1",
+        "body" : {  
+			"Code_UO__c": "C0407",
+            "Email__c": "dr.nidf@sacem.fr",
+            "Name": "DR ILE de France"
+        }
+    },{
+        "method" : "GET",
+        "referenceId" : "NewDRInfo",
+        "url" : "/services/data/v46.0/sobjects/Direction_R_gionale__c/@{dr1.id}"
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl1",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040701","Email__c": "dl.paris@sacem.fr","Name": "Direction Territoriale Paris","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl2",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040710","Email__c": "dl.idf.sudest@sacem.fr","Name": "Direction Territoriale Ile de France Sud Est","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl3",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040713","Email__c": "dl.idf.nordouest@sacem.fr","Name": "Direction Territoriale Ile de France Nord Ouest","DR__c": "@{NewDRInfo.Id}"
+        }
+    }
+	]
+}
+
+

@@ -1,0 +1,28 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "UserRole",
+                "referenceId": "UserRoleRef1"
+            },
+            "Name": "Chargé Clientèle",
+            "DeveloperName": "Charg_Client_le"
+        },
+        {
+            "attributes": {
+                "type": "UserRole",
+                "referenceId": "UserRoleRef2"
+            },
+            "Name": "Directeur DL/DT",
+            "DeveloperName": "DLDT"
+        },
+        {
+            "attributes": {
+                "type": "UserRole",
+                "referenceId": "UserRoleRef3"
+            },
+            "Name": "Pilotage réseau",
+            "DeveloperName": "Pilotage_r_seau"
+        }
+    ]
+}

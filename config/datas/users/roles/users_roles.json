@@ -1,0 +1,14 @@
+[{
+    "alias": "pilres",
+    "role": "Pilotage réseau"
+},{
+    "alias": "dirres",
+    "role": "Directeur DL/DT"
+},{
+    "alias": "dirdldt",
+    "role": "Directeur DL/DT"
+},{
+    "alias": "chargecli",
+    "role": "Chargé Clientèle"
+}
+]

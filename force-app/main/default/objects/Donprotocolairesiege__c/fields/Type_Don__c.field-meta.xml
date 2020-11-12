@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Don__c</fullName>
+    <defaultValue>IF(  $RecordType.Name=&apos;Protocolaire&apos;  , &apos;Protocolaire&apos;, &apos;Appréciation du siège&apos;)</defaultValue>
+    <externalId>false</externalId>
+    <label>Type Don</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Protocolaire</fullName>
+                <default>false</default>
+                <label>Protocolaire</label>
+            </value>
+            <value>
+                <fullName>Appréciation du siège</fullName>
+                <default>false</default>
+                <label>Appréciation du siège</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

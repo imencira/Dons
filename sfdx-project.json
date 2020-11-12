@@ -1,0 +1,43 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "package": "SacemDons",
+            "versionName": "ver 1.3",
+            "versionNumber": "1.3.0.NEXT",
+            "default": true,
+            "definitionFile": "config/project-scratch-def.json",
+            "dependencies": [
+                {
+                    "package": "04t2K000000WifrQAC"
+                },
+                {
+                    "package": "04t3Y0000018TwMQAU"
+                }
+            ]
+        }
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://test.salesforce.com",
+    "sourceApiVersion": "49.0",
+    "packageAliases": {
+        "SacemDons": "0Ho1t000000GmuECAS",
+        "SacemDons@0.1.2-4": "04t1t0000034u2bAAA",
+        "SacemDons@0.1.2-5": "04t1t0000034u3FAAQ",
+        "SacemDons@1.0.0-17": "04t1t0000034ud4AAA",
+        "SacemDons@1.0.0-20": "04t1t0000034ufoAAA",
+        "SacemDons@1.0.0-21": "04t1t0000034uy2AAA",
+        "SacemDons@1.0.0-25": "04t1t0000034v8RAAQ",
+        "SacemDons@1.1.0-1": "04t1t0000034v8WAAQ",
+        "SacemDons@1.2.0-2": "04t3W000000cBLMQA2",
+        "SacemDons@1.2.0-3": "04t3W000000cBLRQA2",
+        "SacemDons@1.2.0.4": "04t3W000000cBLWQA2",
+        "SacemDons@1.3.0-1": "04t3W000000XzF9QAK",
+        "SacemDons@1.3.0-2": "04t3W000000XzFEQA0",
+        "SacemDons@1.3.0-3": "04t3W000000XzFJQA0",
+        "SacemDons@1.3.0-4": "04t3W000000XzFOQA0",
+        "SacemDons@1.3.0-5": "04t3W000000XzFTQA0",
+        "SacemDons@1.3.0-6": "04t3W000000XzFYQA0",
+        "SacemDons@1.3.0-7": "04t3W000000XzFdQAK"
+    }
+}

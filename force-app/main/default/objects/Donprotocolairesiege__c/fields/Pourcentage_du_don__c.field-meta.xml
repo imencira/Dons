@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pourcentage_du_don__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( Type_Don__c , &apos;Protocolaire&apos;), IF(  OR(ISPICKVAL( F_d_ration_concern_e__c , &quot;CMF&quot; ),ISPICKVAL( F_d_ration_concern_e__c , &quot;FFAO&quot; ))  , &apos;50 %&apos;, IF(AND(ISPICKVAL( F_d_ration_concern_e__c , &quot;ACJ&quot;  ), NOT(ISPICKVAL( F_d_ration_concern_e__c , &quot;CMF&quot;  )) ,NOT(ISPICKVAL( F_d_ration_concern_e__c , &quot;FFAO&quot;  ))) , &apos;50 %&apos;, &apos;30 %&apos;) 
+
+
+
+ 
+)  ,  
+
+
+TEXT(Pourcentage_proposition__c)&amp; &apos; %&apos; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Pourcentage du don proposé par DL/DT</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

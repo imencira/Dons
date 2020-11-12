@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>F_d_ration_concern_e__c</fullName>
+    <externalId>false</externalId>
+    <label>Fédération concernée</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CMF</fullName>
+                <default>false</default>
+                <label>CMF</label>
+            </value>
+            <value>
+                <fullName>FFAO</fullName>
+                <default>false</default>
+                <label>FFAO</label>
+            </value>
+            <value>
+                <fullName>ACJ</fullName>
+                <default>false</default>
+                <label>ACJ</label>
+            </value>
+            <value>
+                <fullName>FNSPF</fullName>
+                <default>false</default>
+                <label>FNSPF</label>
+            </value>
+            <value>
+                <fullName>Non Adhérent</fullName>
+                <default>false</default>
+                <label>Non Adhérent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

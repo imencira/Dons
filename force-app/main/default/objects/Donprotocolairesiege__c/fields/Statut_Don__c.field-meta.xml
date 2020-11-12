@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_Don__c</fullName>
+    <externalId>false</externalId>
+    <label>Statut Don</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>En Attente</fullName>
+                <default>false</default>
+                <label>En Attente</label>
+            </value>
+            <value>
+                <fullName>Don crée</fullName>
+                <default>false</default>
+                <label>Dossier Complet</label>
+            </value>
+            <value>
+                <fullName>Accord DL/DT</fullName>
+                <default>false</default>
+                <label>Accord DL/DT</label>
+            </value>
+            <value>
+                <fullName>Refus DL/DT</fullName>
+                <default>false</default>
+                <label>Refus DL/DT</label>
+            </value>
+            <value>
+                <fullName>Accord Pilotage et Réseau</fullName>
+                <default>false</default>
+                <label>Accord Service Pilotage Réseau</label>
+            </value>
+            <value>
+                <fullName>Refus Pilotage et Réseau</fullName>
+                <default>false</default>
+                <label>Refus Service Pilotage Réseau</label>
+            </value>
+            <value>
+                <fullName>Accord Direction Réseau</fullName>
+                <default>false</default>
+                <label>Accord Direction Réseau</label>
+            </value>
+            <value>
+                <fullName>Note de dépense validée</fullName>
+                <default>false</default>
+                <label>Note de dépense validée</label>
+            </value>
+            <value>
+                <fullName>Chèque Envoyé</fullName>
+                <default>false</default>
+                <label>Chèque Envoyé</label>
+            </value>
+            <value>
+                <fullName>Refus Direction Réseau</fullName>
+                <default>false</default>
+                <label>Refus Direction Réseau</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

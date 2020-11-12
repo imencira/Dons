@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_evenement2</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(YEAR(   v_nement_2_Date_concern_e__c  ) &lt;&gt;  (YEAR ( TODAY() ) -1),  ISPICKVAL( Type_Don__c , &apos;Protocolaire&apos;) )</errorConditionFormula>
+    <errorMessage>On ne gère que les dons de l’année N-1</errorMessage>
+</ValidationRule>

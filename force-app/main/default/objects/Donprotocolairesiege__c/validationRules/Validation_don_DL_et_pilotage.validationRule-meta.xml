@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_don_DL_et_pilotage</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT (ISPICKVAL( D_cisionDL__c , &quot;Accord&quot;)) , ISPICKVAL( Statut__c , &quot;Accord&quot;),ISPICKVAL( Profile_Cr_ation__c ,&apos;Chargé Clientèle&apos;) )</errorConditionFormula>
+    <errorMessage>Le Directeur DL/DT doit valider le Don avant que le service pilotage et réseau puisse le valider</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pilotage_creation_don</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+OR( ISPICKVAL( Profile_Cr_ation__c , &apos;Pilotage réseau&apos;), ISPICKVAL( Profile_Cr_ation__c , &apos;Direction réseau&apos;)),
+
+NOT(  CONTAINS(  DL_DT__r.Name ,&apos;Service pilotage et réseau&apos; ))
+)</errorConditionFormula>
+    <errorMessage>Le don est crée par le service pilotage et réseau, veuillez vérifier la DL/DT</errorMessage>
+</ValidationRule>

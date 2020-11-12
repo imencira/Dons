@@ -1,0 +1,110 @@
+{
+    "allOrNone" : true,
+    "compositeRequest" : [
+	{
+        "method" : "POST",
+        "url" : "/services/data/v46.0/sobjects/Direction_R_gionale__c",
+        "referenceId" : "dr1",
+        "body" : {  
+			"Code_UO__c": "C0408",
+            "Email__c": "dr.ouest@sacem.fr",
+            "Name": "DR OUEST"
+        }
+    },{
+        "method" : "GET",
+        "referenceId" : "NewDRInfo",
+        "url" : "/services/data/v46.0/sobjects/Direction_R_gionale__c/@{dr1.id}"
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl1",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040801","Email__c": "dl.angers@sacem.fr","Name": "Délégation Angers","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl2",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040802","Email__c": "dl.brest@sacem.fr","Name": "Délégation Brest","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl3",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040803","Email__c": "dl.caen@sacem.fr","Name": "Délégation Caen","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl4",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040805","Email__c": "dl.lorient@sacem.fr","Name": "Délégation Lorient","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl5",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040806","Email__c": "dl.lemans@sacem.fr","Name": "Délégation Le Mans","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl6",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040807","Email__c": "dl.nantes@sacem.fr","Name": "Délégation Nantes","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl7",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040810","Email__c": "dl.rennes@sacem.fr","Name": "Délégation Rennes","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl8",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040811","Email__c": "dl.rouen@sacem.fr","Name": "Délégation Rouen","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl9",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040812","Email__c": "dl.saintbrieuc@sacem.fr","Name": "Délégation Saint Brieuc","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl10",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040814","Email__c": "dl.larochesuryon@sacem.fr","Name": "Délégation La Roche Sur Yon","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl14",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040817","Email__c": "dl.orleans@sacem.fr","Name": "Délégation Orléans","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl15",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040816","Email__c": "dl.bourges@sacem.fr","Name": "Délégation Bourges","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl16",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040818","Email__c": "dl.tours@sacem.fr","Name": "Délégation Tours","DR__c": "@{NewDRInfo.Id}"
+        }
+    }
+	]
+}

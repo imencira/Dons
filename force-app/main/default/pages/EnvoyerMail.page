@@ -1,0 +1,29 @@
+<apex:page controller="SendEmailDon" > 
+<apex:form >
+<apex:pageblock title="Nouveau message ">
+
+        <br /><br />
+        <apex:outputLabel value="À" for="À"/>:<br />    
+
+            <apex:inputText value="{!emails }" id="emails" maxlength="80"/>
+
+            <br /><br />
+
+            <apex:outputLabel value="Subject" for="Subject"/>:<br />    
+
+            <apex:inputText value="{!subject}" id="Subject" maxlength="80"/>
+
+            <br /><br />
+
+            <apex:outputLabel value="Body" for="Body"/>:<br />    
+
+            <apex:inputTextarea value="{!email_body }" id="Body" rows="10" cols="80"/>          
+
+            <br /><br /><br />
+
+            <apex:commandButton value="Send Email" action="{!send}" />
+</apex:pageblock>
+
+        </apex:form>
+
+</apex:page>

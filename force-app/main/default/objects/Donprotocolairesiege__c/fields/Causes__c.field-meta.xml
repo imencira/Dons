@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Causes__c</fullName>
+    <externalId>false</externalId>
+    <label>Causes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Enfance et jeunesse</fullName>
+                <default>false</default>
+                <label>Enfance et jeunesse</label>
+            </value>
+            <value>
+                <fullName>Grand âge</fullName>
+                <default>false</default>
+                <label>Grand âge</label>
+            </value>
+            <value>
+                <fullName>Handicap</fullName>
+                <default>false</default>
+                <label>Handicap</label>
+            </value>
+            <value>
+                <fullName>Lutte contre le Sida</fullName>
+                <default>false</default>
+                <label>Lutte contre le Sida</label>
+            </value>
+            <value>
+                <fullName>Précarité</fullName>
+                <default>false</default>
+                <label>Précarité</label>
+            </value>
+            <value>
+                <fullName>Recherche médicale</fullName>
+                <default>false</default>
+                <label>Recherche médicale</label>
+            </value>
+            <value>
+                <fullName>Situations d&apos;urgence</fullName>
+                <default>false</default>
+                <label>Situations d&apos;urgence</label>
+            </value>
+            <value>
+                <fullName>Soutien aux communautés locales</fullName>
+                <default>false</default>
+                <label>Soutien aux communautés locales</label>
+            </value>
+            <value>
+                <fullName>Soutien aux malades</fullName>
+                <default>false</default>
+                <label>Soutien aux malades</label>
+            </value>
+            <value>
+                <fullName>Urgences (attentats, catastrophes naturelles)</fullName>
+                <default>false</default>
+                <label>Urgences (attentats, catastrophes naturelles)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

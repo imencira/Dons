@@ -1,0 +1,117 @@
+{
+    "allOrNone" : true,
+    "compositeRequest" : [
+	{
+        "method" : "POST",
+        "url" : "/services/data/v46.0/sobjects/Direction_R_gionale__c",
+        "referenceId" : "dr1",
+        "body" : {  
+			"Code_UO__c": "C0405",
+            "Email__c": "dr.soa@sacem.fr",
+            "Name": "DR SUD OUEST'"
+        }		
+    },{
+        "method" : "GET",
+        "referenceId" : "NewDRInfo",
+        "url" : "/services/data/v46.0/sobjects/Direction_R_gionale__c/@{dr1.id}"		
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl1",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040501","Email__c": "dl.agen@sacem.fr","Name": "Délégation Agen","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl2",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040503","Email__c": "dl.biarritz@sacem.fr","Name": "Délégation Biarritz","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl3",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040505","Email__c": "dl.bordeaux@sacem.fr","Name": "Délégation Bordeaux","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl4",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040506","Email__c": "dl.larochelle@sacem.fr","Name": "Délégation La Rochelle","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl5",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040508","Email__c": "dl.montauban@sacem.fr","Name": "Délégation Montauban","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl6",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040509","Email__c": "dl.pau@sacem.fr","Name": "Délégation Pau","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl7",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040510","Email__c": "dl.perigueux@sacem.fr","Name": "Délégation Périgueux","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl8",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040511","Email__c": "dl.poitiers@sacem.fr","Name": "Délégation Poitiers","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl10",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040515","Email__c": "dl.toulouse@sacem.fr","Name": "Délégation Toulouse","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl11",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040514","Email__c": "dl.albi@sacem.fr","Name": "Délégation Albi","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl12",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040516","Email__c": "dl.limoges@sacem.fr","Name": "Délégation Limoges","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl13",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040518","Email__c": "dl.carcassonne@sacem.fr","Name": "Délégation Carcassonne","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl14",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040520","Email__c": "dl.perpignan@sacem.fr","Name": "Délégation Perpignan","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl15",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040519","Email__c": "dl.montpellier@sacem.fr","Name": "Délégation Montpellier","DR__c": "@{NewDRInfo.Id}"
+        }
+    }
+	]
+}

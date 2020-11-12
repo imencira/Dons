@@ -1,0 +1,29 @@
+{
+  "orgName": "Projet DONS",
+  "edition": "Enterprise",
+  "features": ["ContactsToMultipleAccounts", "ChatterAnswersUser"],
+  "settings": {
+    "currencySettings": {
+      "enableMultiCurrency": true
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": false
+    },
+    "lightningExperienceSettings": {
+        "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "chatterSettings": {
+      "enableChatter": true
+    },
+    "languageSettings": {
+      "enableTranslationWorkbench":  true,
+      "enableEndUserLanguages": true
+    },
+    "enhancedNotesSettings": {
+      "enableEnhancedNotes": true
+    }
+  }
+}

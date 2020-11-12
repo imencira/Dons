@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Directeur_DLDT</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  ISPICKVAL(  Don__r.D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED(  Name_Ben__c   )   )</errorConditionFormula>
+    <errorMessage>Après Validation par la DL/DT vous ne pouvez plus changer le bénéficiaire</errorMessage>
+</ValidationRule>

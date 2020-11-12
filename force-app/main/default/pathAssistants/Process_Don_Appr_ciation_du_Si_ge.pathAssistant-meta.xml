@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Donprotocolairesiege__c</entityName>
+    <fieldName>Statut_Don__c</fieldName>
+    <masterLabel>Process Don Appréciation du Siège</masterLabel>
+    <recordTypeName>Aprr_ciationsiege</recordTypeName>
+</PathAssistant>

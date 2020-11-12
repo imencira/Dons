@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>formattedDateeven2Protocolaire__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(DAY(  v_nement_2_Date_concern_e__c )) + &apos; &apos; + CASE( MONTH( v_nement_2_Date_concern_e__c ), 1, &quot;Janvier&quot;, 2, &quot;Février&quot;, 3, &quot;Mars&quot;, 4, &quot;Avril&quot;, 5, &quot;Mai&quot;, 6, &quot;Juin&quot;, 7, &quot;Juillet&quot;, 8, &quot;Aout&quot;, 9, &quot;Septembre&quot;, 10, &quot;Octobre&quot;, 11, &quot;Novembre&quot;, 12, &quot;Décembre&quot;, &quot;-&quot; )
++ &apos; &apos; + TEXT(YEAR(v_nement_2_Date_concern_e__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>formattedDateeven2Protocolaire</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

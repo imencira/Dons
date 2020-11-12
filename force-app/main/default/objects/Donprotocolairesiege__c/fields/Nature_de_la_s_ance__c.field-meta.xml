@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nature_de_la_s_ance__c</fullName>
+    <externalId>false</externalId>
+    <label>Nature de la séance</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>concert</fullName>
+                <default>false</default>
+                <label>Concert et spectacle de variétés/kermesse</label>
+            </value>
+            <value>
+                <fullName>Bal, soirée dansante</fullName>
+                <default>false</default>
+                <label>Bal, soirée dansante</label>
+            </value>
+            <value>
+                <fullName>Repas en musique</fullName>
+                <default>false</default>
+                <label>Repas en musique</label>
+            </value>
+            <value>
+                <fullName>Festival</fullName>
+                <default>false</default>
+                <label>Festival</label>
+            </value>
+            <value>
+                <fullName>Manifestation</fullName>
+                <default>false</default>
+                <label>Manifestation (autre)</label>
+            </value>
+            <value>
+                <fullName>Manifestations</fullName>
+                <default>false</default>
+                <label>Manifestations</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

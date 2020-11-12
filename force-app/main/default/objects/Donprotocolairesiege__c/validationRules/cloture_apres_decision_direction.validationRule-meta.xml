@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cloture_apres_decision_direction</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  ISPICKVAL(Cl_tur__c , &apos;Chèque envoyé&apos;), NOT( ISPICKVAL( D_cisiondirection__c , &apos;Accord&apos;) )  )</errorConditionFormula>
+    <errorMessage>Le chèque ne peut pas être envoyé sans l&apos;accord de la direction réseau</errorMessage>
+</ValidationRule>

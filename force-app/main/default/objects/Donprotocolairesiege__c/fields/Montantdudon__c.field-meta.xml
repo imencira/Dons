@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Montantdudon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(Pourcentage_proposition__c, &quot;50&quot;)  , Montant_des_droits__c   *  50  / 100,  Montant_des_droits__c * 30 / 100)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Montant global du don</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

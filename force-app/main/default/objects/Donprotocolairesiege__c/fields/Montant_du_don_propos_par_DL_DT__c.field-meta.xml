@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Montant_du_don_propos_par_DL_DT__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  ISPICKVAL( Type_Don__c ,&quot;Protocolaire&quot;) ,   Montant_global_du_don_HTprotocolaire__c , Montantdudon__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Montant du don proposé par DL/DT</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

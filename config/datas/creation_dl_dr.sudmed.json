@@ -1,0 +1,19 @@
+{
+    "allOrNone" : true,
+    "compositeRequest" : [
+	{
+        "method" : "POST",
+        "url" : "/services/data/v46.0/sobjects/Direction_R_gionale__c",
+        "referenceId" : "dr1",
+        "body" : {  
+			"Code_UO__c": "C0404",
+            "Email__c": "dr.sudmed@sacem.fr",
+            "Name": "DR SUD-MED"
+        }		
+    },{
+        "method" : "GET",
+        "referenceId" : "NewDRInfo",
+        "url" : "/services/data/v46.0/sobjects/Direction_R_gionale__c/@{dr1.id}"
+    }
+	]
+}

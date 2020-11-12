@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appr_ciation_du_Si_ge</fullName>
+    <active>true</active>
+    <label>Appréciation du Siège</label>
+    <picklistValues>
+        <picklist>ND_Si_ge_V1_g_n_r__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ND_proto_V1_g_n_r__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ND_proto_V2_g_n_r__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ND_siege_V2_g_n_r__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_Approbation_Directeur_R_seau_ND__c</picklist>
+        <values>
+            <fullName>Approuvée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En Attente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non approuvée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_ND__c</picklist>
+        <values>
+            <fullName>Approuvée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En Attente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Envoyée DFC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Approuvée Direction Réseau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_Validation_Direction_R_seau_ND__c</picklist>
+        <values>
+            <fullName>Approuvé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>nonapprouve</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_Note_de_D_pense__c</picklist>
+        <values>
+            <fullName>Appréciation du Siège</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

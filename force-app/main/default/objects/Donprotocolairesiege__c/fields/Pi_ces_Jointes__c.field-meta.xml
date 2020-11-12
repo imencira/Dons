@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pi_ces_Jointes__c</fullName>
+    <externalId>false</externalId>
+    <label>Pièces Jointes</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Etat des recettes et dépenses</fullName>
+                <default>false</default>
+                <label>Etat des recettes et dépenses</label>
+            </value>
+            <value>
+                <fullName>demande autorisation</fullName>
+                <default>false</default>
+                <label>Demande d’autorisation</label>
+            </value>
+            <value>
+                <fullName>Contrat général de représentation</fullName>
+                <default>false</default>
+                <label>Contrat général de représentation</label>
+            </value>
+            <value>
+                <fullName>Bilan détaillé manifestation</fullName>
+                <default>false</default>
+                <label>Bilan détaillé manifestation</label>
+            </value>
+            <value>
+                <fullName>Demande écrite de don jointe</fullName>
+                <default>false</default>
+                <label>Demande écrite de don jointe</label>
+            </value>
+            <value>
+                <fullName>Factures de l&apos;année écoulée</fullName>
+                <default>false</default>
+                <label>Factures de l&apos;année écoulée</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

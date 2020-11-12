@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>validation_pilotage_pourcentage_don</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR( AND( ISPICKVAL(   Validation_Charg_Client_le__c , &quot;Dossier Complet&quot;) , Somme_des_pourcentages_des_Dons__c &lt;1),
+
+AND( ISPICKVAL(    Statut__c , &quot;Accord&quot;) , Somme_des_pourcentages_des_Dons__c &lt;1  ,ISPICKVAL( Profile_Cr_ation__c ,&apos;Pilotage réseau&apos;) ) ,
+
+AND( ISPICKVAL(    Statut__c , &quot;Accord&quot;) , Somme_des_pourcentages_des_Dons__c &lt;1  ,ISPICKVAL( Profile_Cr_ation__c ,&apos;Direction réseau&apos;) )
+
+
+)</errorConditionFormula>
+    <errorMessage>Bénéficiaire absent ou somme des pourcentages des dons est &lt; à 100 %</errorMessage>
+</ValidationRule>

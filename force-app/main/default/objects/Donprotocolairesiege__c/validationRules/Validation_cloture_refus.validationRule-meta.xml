@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_cloture_refus</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(Cl_tur__c , &apos;Don refusé&apos;),  ISPICKVAL( D_cisiondirection__c , &apos;Accord&apos;)  )</errorConditionFormula>
+    <errorMessage>Dans le cas de l&apos;accord de la direction, un chèque doit être envoyer au bénéficiaire</errorMessage>
+</ValidationRule>

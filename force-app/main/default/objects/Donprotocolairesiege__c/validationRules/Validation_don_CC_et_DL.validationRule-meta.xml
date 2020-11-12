@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_don_CC_et_DL</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT (ISPICKVAL(  Validation_Charg_Client_le__c  , &quot;Dossier Complet&quot;)) , ISPICKVAL(  D_cisionDL__c  , &quot;Accord&quot;) )</errorConditionFormula>
+    <errorMessage>Le chargé clientèle doit finaliser la création du dossier  avant que le directeur DL/DT puisse le valider</errorMessage>
+</ValidationRule>

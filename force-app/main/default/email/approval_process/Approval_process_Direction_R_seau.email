@@ -1,0 +1,11 @@
+Bonjour
+
+
+Madame {!ND__c.contactDD__c},
+
+Une nouvelle Note de Dépense est disponible pour approbation. Veuillez indiquer si vous approuvez cette Note de Dépense en cliquant sur ce Lien {!ApprovalRequest.External_URL}. Merci.
+
+
+Cordialement
+
+Service Pilotage et Réseau

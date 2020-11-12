@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Signed_before_dfc</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (   Valid_e__c =TRUE,  NOT ( ISPICKVAL( Statut_Approbation_Directeur_R_seau_ND__c , &apos;Approuvée&apos;) ) )</errorConditionFormula>
+    <errorMessage>La note de dépense doit être approuvée par le directeur de réseau avant de l&apos;envoyer à la DFC.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>protocolaire</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Don_compact_protocolaire</compactLayoutAssignment>
+    <label>Protocolaire</label>
+    <picklistValues>
+        <picklist>Causes__c</picklist>
+        <values>
+            <fullName>Enfance et jeunesse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand âge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handicap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lutte contre le Sida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Précarité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recherche médicale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Situations d%27urgence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soutien aux communautés locales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soutien aux malades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgences %28attentats%2C catastrophes naturelles%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Civilit__c</picklist>
+        <values>
+            <fullName>Madame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monsieur</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cl_tur__c</picklist>
+        <values>
+            <fullName>Chèque envoyé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don refusé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DOSSIER_COMPLET__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>D_cisionDL__c</picklist>
+        <values>
+            <fullName>Accord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>D_cisiondirection__c</picklist>
+        <values>
+            <fullName>Accord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>F_d_ration_concern_e__c</picklist>
+        <values>
+            <fullName>ACJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FFAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FNSPF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Montant_du_Don__c</picklist>
+        <values>
+            <fullName>Dons de moins de 500%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dons de plus de 500 %E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nature_de_la_s_ance__c</picklist>
+        <values>
+            <fullName>Manifestation</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Manifestations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pi_ces_Jointes__c</picklist>
+        <values>
+            <fullName>Demande écrite de don jointe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Factures de l%27année écoulée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pourcentage_proposition__c</picklist>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Profile_Cr_ation__c</picklist>
+        <values>
+            <fullName>Chargé Clientèle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Directeur DL%2FDT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direction réseau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pilotage réseau</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_Don__c</picklist>
+        <values>
+            <fullName>Accord DL%2FDT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accord Direction Réseau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accord Pilotage et Réseau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chèque Envoyé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don crée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En Attente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Note de dépense validée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus DL%2FDT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus Direction Réseau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus Pilotage et Réseau</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut__c</picklist>
+        <values>
+            <fullName>Accord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_Don__c</picklist>
+        <values>
+            <fullName>Protocolaire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_Tarification__c</picklist>
+        <values>
+            <fullName>Au Forfait</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Au Pourcentage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_paiement__c</picklist>
+        <values>
+            <fullName>Chèque</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Validation_Charg_Client_le__c</picklist>
+        <values>
+            <fullName>Dossier Complet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En Attente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,11 @@
+{
+    "LastName": "DirecteurDLDT",    
+    "Alias": "dirdldt",
+    "TimeZoneSidKey": "Europe/Paris",
+    "LocaleSidKey": "fr_FR",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "fr",
+    "profileName": "Directeur DL%2FDT",
+    "generatePassword": true,
+    "permsets": "DirecteurDLDT_DONS"
+}

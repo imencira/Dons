@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>type_de_facturation_pourcentage_siege_1</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Type_de_Tarification__c , &quot;Au Pourcentage&quot;),NOT(AND(INCLUDES( Pi_ces_Jointes__c , &quot;Etat des recettes et dépenses&quot;) ,INCLUDES( Pi_ces_Jointes__c , &quot;Demande écrite de don jointe&quot;) 
+,INCLUDES( Pi_ces_Jointes__c , &quot;Contrat général de représentation&quot;) 
+,INCLUDES( Pi_ces_Jointes__c , &quot;Bilan détaillé manifestation&quot;) 
+)), ISPICKVAL( Type_Don__c ,&quot;Appréciation du siège&quot;))</errorConditionFormula>
+    <errorMessage>Vous avez choisi une tarification au pourcentage, il faut joindre le CGR, le Bilan détaillé, l&apos;Etat des recettes et dépenses et la Demande écrite de don</errorMessage>
+</ValidationRule>

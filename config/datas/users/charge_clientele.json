@@ -1,0 +1,11 @@
+{
+    "LastName": "ChargeClientele",    
+    "Alias": "chargecli",
+    "TimeZoneSidKey": "Europe/Paris",
+    "LocaleSidKey": "fr_FR",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "fr",
+    "profileName": "chargé clientèle",
+    "generatePassword": true,
+    "permsets": "charge_clientele_DONS"
+}

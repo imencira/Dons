@@ -1,0 +1,11 @@
+{
+    "LastName": "DirectionReseau",    
+    "Alias": "dirres",
+    "TimeZoneSidKey": "Europe/Paris",
+    "LocaleSidKey": "fr_FR",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "fr",
+    "profileName": "Direction réseau",
+    "generatePassword": true,
+    "permsets": "Direction_reseau_DONS"
+}

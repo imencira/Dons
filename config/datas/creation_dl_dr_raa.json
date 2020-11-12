@@ -1,0 +1,103 @@
+{
+    "allOrNone" : true,
+    "compositeRequest" : [
+	{
+        "method" : "POST",
+        "url" : "/services/data/v46.0/sobjects/Direction_R_gionale__c",
+        "referenceId" : "dr1",
+        "body" : {  
+			"Code_UO__c": "C0406",
+            "Email__c": "dr.raa@sacem.fr",
+            "Name": "DR SUD EST"
+        }		
+    },{
+        "method" : "GET",
+        "referenceId" : "NewDRInfo",
+        "url" : "/services/data/v46.0/sobjects/Direction_R_gionale__c/@{dr1.id}"		
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl1",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040601","Email__c": "dl.annecy@sacem.fr","Name": "Délégation Annecy","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl2",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040605","Email__c": "dl.chambery@sacem.fr","Name": "Délégation Chambéry","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl3",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040606","Email__c": "dl.clermontferrand@sacem.fr","Name": "Délégation Clermont Ferrand","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl4",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040608","Email__c": "dl.grenoble@sacem.fr","Name": "Délégation Grenoble","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl5",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040611","Email__c": "dl.lyon@sacem.fr","Name": "Délégation Lyon","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl6",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040612","Email__c": "dl.saintetienne@sacem.fr","Name": "Délégation Saint Etienne","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl7",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040613","Email__c": "dl.valence@sacem.fr","Name": "Délégation Valence","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl12",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040622","Email__c": "dl.marseille@sacem.fr","Name": "Délégation Marseille","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl13",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040623","Email__c": "dl.nice@sacem.fr","Name": "Délégation Nice","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl14",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040624","Email__c": "dl.nimes@sacem.fr","Name": "Délégation Nîmes","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl15",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040625","Email__c": "dl.toulon@sacem.fr","Name": "Délégation Toulon","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl16",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C040619","Email__c": "dl.ajaccio@sacem.fr","Name": "Délégation Ajaccio","DR__c": "@{NewDRInfo.Id}"
+        }
+    }	
+	]
+}

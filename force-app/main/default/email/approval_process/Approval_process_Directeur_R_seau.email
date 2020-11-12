@@ -1,0 +1,11 @@
+Bonjour
+
+
+Monsieur {!ND__c.Contact_Directeur_R_seau__c},
+
+Une nouvelle Note de Dépense est disponible pour approbation. Veuillez indiquer si vous approuvez cette Note de Dépense en cliquant sur ce Lien {!ApprovalRequest.External_URL}. Merci.
+
+
+Cordialement
+
+Direction Réseau

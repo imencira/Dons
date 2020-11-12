@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Directeur_DLDT</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR ( AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( Organisateur__c ) ), 
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( 	Type_de_Tarification__c) ),
+
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( 	Montant_global_des_factures_HT__c) ),
+
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( F_d_ration_concern_e__c ) ), 
+ 
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( Adresse__c ) ), 
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( Ville__c ) ), 
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( CP__c ) ), 
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( Validation_Charg_Client_le__c ) ), 
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( Nom__c ) ), 
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( Pr_nom__c ) ), 
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( Pi_ces_Jointes__c ) ), 
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( Montant_des_droits_d_auteur_HT1__c ) ), 
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( Montant_des_droits_d_auteur_HT2__c ) ), 
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( Date_concern_e__c ) ), 
+AND( ISPICKVAL( D_cisionDL__c , &apos;Accord&apos;) , ISCHANGED( Causes__c ) ) 
+
+)</errorConditionFormula>
+    <errorMessage>Après Validation par la DL/DT vous ne pouvez plus Changer les données du don</errorMessage>
+</ValidationRule>

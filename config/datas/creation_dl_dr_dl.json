@@ -1,0 +1,70 @@
+{
+    "allOrNone" : true,
+    "compositeRequest" : [
+	{
+        "method" : "POST",
+        "url" : "/services/data/v46.0/sobjects/Direction_R_gionale__c",
+        "referenceId" : "dr1",
+        "body" : {  
+			"Code_UO__c": "C0410",
+            "Email__c": "dl@sacem.fr",
+            "Name": "DL RATTACHEES A LA DIRECTION DU RESEAU"
+        }		
+    },{
+        "method" : "GET",
+        "referenceId" : "NewDRInfo",
+        "url" : "/services/data/v46.0/sobjects/Direction_R_gionale__c/@{dr1.id}"		
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl1",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C041002","Email__c": "dl.martinique@sacem.fr","Name": "Délégation Martinique","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl2",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C04100201","Email__c": "dl.guyane@sacem.fr","Name": "Délégation Martinique / Guyane","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl3",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C041003","Email__c": "dl.guadeloupe@sacem.fr","Name": "Délégation de la Guadeloupe","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl4",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C041004","Email__c": "dl.lareunion@sacem.fr","Name": "Délégation Réunion","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl5",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C04100401","Email__c": "dl.lareunion@sacem.fr","Name": "Délégation Mayotte","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl6",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C041005","Email__c": "dl.monaco@sacem.fr","Name": "Délégation Monaco","DR__c": "@{NewDRInfo.Id}"
+        }
+    },{
+        "method" : "POST",
+        "referenceId" : "dr1dl7",
+        "url" : "/services/data/v38.0/sobjects/D_l_gation__c",
+        "body" : {  
+            "Code_UO__c": "C18","Email__c": "pilotage.reseau@sacem.fr","Name": "Service pilotage et réseau","DR__c": "@{NewDRInfo.Id}"
+        }
+    }	
+	]
+}
+
+

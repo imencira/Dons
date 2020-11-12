@@ -1,0 +1,11 @@
+{
+    "LastName": "PilotageReseau",    
+    "Alias": "pilres",
+    "TimeZoneSidKey": "Europe/Paris",
+    "LocaleSidKey": "fr_FR",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "fr",
+    "profileName": "Pilotage réseau",
+    "generatePassword": true,
+    "permsets": "Pilotage_reseau_DONS"
+}

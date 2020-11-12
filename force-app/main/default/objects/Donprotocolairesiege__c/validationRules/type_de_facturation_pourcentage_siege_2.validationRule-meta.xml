@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>type_de_facturation_pourcentage_siege_2</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Type_de_Tarification__c , &quot;Au Pourcentage&quot;),ISPICKVAL( Type_Don__c ,&quot;Appréciation du siège&quot;),
+INCLUDES( Pi_ces_Jointes__c , &quot;demande autorisation&quot; ) )</errorConditionFormula>
+    <errorMessage>Vous avez choisi un type de facturation au pourcentage, pas besoin de joindre la demande d&apos;autorisation</errorMessage>
+</ValidationRule>

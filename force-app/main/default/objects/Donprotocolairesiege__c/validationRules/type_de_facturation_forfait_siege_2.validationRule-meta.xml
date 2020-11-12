@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>type_de_facturation_forfait_siege_2</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND(ISPICKVAL( Type_de_Tarification__c , &quot;Au Forfait&quot;) ,  INCLUDES( Pi_ces_Jointes__c , &quot;Contrat général de représentation&quot;) 
+ ),
+
+AND(ISPICKVAL( Type_de_Tarification__c , &quot;Au Forfait&quot;) ,INCLUDES( Pi_ces_Jointes__c ,&quot;Bilan détaillé manifestation&quot;) ) ,
+AND(ISPICKVAL( Type_de_Tarification__c , &quot;Au Forfait&quot;) ,  INCLUDES( Pi_ces_Jointes__c , &quot;Etat des recettes et dépenses&quot;) 
+ )
+
+
+ )</errorConditionFormula>
+    <errorMessage>Vous avez choisi une tarification au forfait, l’organisateur ne signe pas de contrat, ne remet  ni  de bilan ni d&apos;état des recettes et dépenses</errorMessage>
+</ValidationRule>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pourcentage_du_don_doit_tre_ramen_e__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( Type_Don__c , &apos;Protocolaire&apos;), ( Proposition_du_DL_doit_tre_ramen_e__c /
+
+
+IF(  OR(ISPICKVAL( F_d_ration_concern_e__c , &quot;CMF&quot; ),ISPICKVAL( F_d_ration_concern_e__c , &quot;FFAO&quot; ))  ,  Montant_global_des_droits_d_auteur_HT__c, IF(AND(ISPICKVAL( F_d_ration_concern_e__c , &quot;ACJ&quot;  ), NOT(ISPICKVAL( F_d_ration_concern_e__c , &quot;CMF&quot;  )) ,NOT(ISPICKVAL( F_d_ration_concern_e__c , &quot;FFAO&quot;  ))) ,  MAX( Montant_des_droits_d_auteur_HT1__c, Montant_des_droits_d_auteur_HT2__c  ) ,   MAX( Montant_des_droits_d_auteur_HT1__c, Montant_des_droits_d_auteur_HT2__c  ) ) )
+
+
+
+
+
+
+
+
+
+
+)   , 
+
+
+
+( Proposition_du_DL_doit_tre_ramen_e__c / Montant_des_droits__c )
+ )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Pourcentage du don doit être ramené à</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

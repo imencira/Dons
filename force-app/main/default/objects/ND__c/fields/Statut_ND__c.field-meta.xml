@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_ND__c</fullName>
+    <externalId>false</externalId>
+    <label>Statut ND</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>En Attente</fullName>
+                <default>true</default>
+                <label>En Attente</label>
+            </value>
+            <value>
+                <fullName>Approuvée</fullName>
+                <default>false</default>
+                <label>Approuvée Direction Réseau</label>
+            </value>
+            <value>
+                <fullName>Signée</fullName>
+                <default>false</default>
+                <label>Approuvée Directeur Réseau</label>
+            </value>
+            <value>
+                <fullName>Non Approuvée Direction Réseau</fullName>
+                <default>false</default>
+                <label>Non Approuvée DIR_RESEAU</label>
+            </value>
+            <value>
+                <fullName>Envoyée DFC</fullName>
+                <default>false</default>
+                <label>Envoyée DFC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

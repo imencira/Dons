@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDCHEQUE</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT(Validation_Note_de_D_pense__c=&quot;Oui&quot;), ISPICKVAL( Cl_tur__c , &apos;Chèque envoyé&apos;)   )</errorConditionFormula>
+    <errorMessage>Une validation de Note de Dépense est nécessaire avant d&apos;envoyer le chèque</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Directeur_R_seau__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Contact Directeur Réseau</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Notes de Dépenses (Contact Directeur Réseau)</relationshipLabel>
+    <relationshipName>Notes_de_D_penses2</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

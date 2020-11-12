@@ -1,0 +1,132 @@
+<apex:page standardController="B_n_ficiaire__c"  extensions="benificiairePagination" recordSetVar="dons" renderAs="pdf" applyBodyTag="false">
+<head>
+
+        <style>
+
+            body { font-family: 'Arial Unicode MS'; }
+
+            .companyName { font: bold 30px; color: blue; } 
+
+        </style>
+        <style>
+        td.total_td{
+            border-top: solid 0.1px ;
+
+        }
+    </style>
+    
+    
+    <style type="text/css">
+    .pbSubheader h3 {
+        white-space: pre;
+    }
+</style>
+<style>
+.tableClass tbody{text-align:center}
+</style>
+
+    </head>
+    <apex:form >
+
+  <apex:variable value="{!0.00}" var="total1"/>
+<apex:variable value="{!0}" var="total2"/>
+  <script>
+    // Here we will set the generated subtotals to the footer cells
+    document.getElementsByClassName('t1')[0].innerHTML = '{!total1}';
+    document.getElementsByClassName('t2')[0].innerHTML = '{!ROUND(total2,0)}';
+</script>
+<apex:pageBlock >  
+
+ <div class="header">
+    <img src="{!$Resource.logo_sacem}" width="25%"/>
+  </div>
+  <apex:panelGrid columns="1" style="float:right;">
+         <p> {!formattedDateNow } </p>
+    </apex:panelGrid>
+  <apex:panelGrid columns="1" width="100%">
+  <apex:outputText value="DIRECTION DU RESEAU"></apex:outputText>
+
+ <apex:outputText value="Service pilotage réseau"></apex:outputText>
+  <apex:outputText value="et partenariats"></apex:outputText>
+  <apex:outputText > (poste 42.56) </apex:outputText>
+
+          </apex:panelGrid>
+
+
+  <center>
+ <apex:panelGrid columns="1" width="100%">
+
+            <apex:outputText value="Note de dépense Appréciation du siège" styleClass="companyName"/>
+            <apex:outputText value="(à transmettre au DFC en deux exemplaires)"></apex:outputText>
+
+
+              
+          </apex:panelGrid>
+        <br /><br />
+
+<p>Nous vous prions de bien vouloir trouver, ci joint, le récapitulatif des dons dont le montant global est de : {!Somme} euros</p>
+
+
+
+<!-- <hr/> -- pour souligner un text -->
+
+ </center>
+    
+<p>Merci d'établir les chèques à l'ordre des associations référencées dans le tableau joint en y affectant le montant du don correspondant.</p>
+        <br /><br /><br />
+  <apex:outputText value="pièce(s) justificatives(s) jointe(s)" style="font-size: 10px;"></apex:outputText>
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <apex:outputText value="LE CHEF DE SERVICE,                 LE DIRECTEUR GENERAL,                  VISA DE M. LE TRÉSORIER"  style="font-size: 13px;white-space:pre;"></apex:outputText>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<apex:pageblockTable value="{!Benisiege}" var="d" columnsWidth="50%,35%,20%" styleClass="total_td"  >
+ 
+            
+             <apex:column styleClass="total_td">
+
+  <apex:facet name="header">NOM DU BENEFICIAIRE </apex:facet>
+
+                      {!d.Name_b_n_ficiaire__c}
+ <!-- Footer of the first Cell -->
+        <apex:facet name="footer">
+            Total:
+        </apex:facet>
+            </apex:column>
+            
+            <apex:column styleClass="total_td" >
+  <apex:facet name="header">MONTANT COLLECTÉ HT</apex:facet>
+
+                      {!d.Montant_Perception_HT__c} €
+                      
+                      <!-- Footer of the first Cell -->
+        <apex:facet name="footer">
+             {!Sommedroitsiege} €
+        </apex:facet>
+
+            </apex:column>
+            <apex:column styleClass="total_td" >
+  <apex:facet name="header">MONTANT DU DON</apex:facet>
+                    {!d.Montant_don_HT__c } €
+
+        <!-- Footer of the first Cell -->
+        <apex:facet name="footer">
+             {!Somme} €
+        </apex:facet>
+            </apex:column>
+
+ 
+
+</apex:pageblockTable>
+
+
+ 
+</apex:pageBlock>
+
+
+
+
+
+</apex:form>
+
+
+</apex:page>
